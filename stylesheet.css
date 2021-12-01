@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+:root{
+    --primary-color: #3a4052;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    
+}
+
+.logo{
+    background-color:transparent;
+}
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #06112A;
+    
+}
+
+
+body{
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    margin: auto;
+}
+
+
+h1{
+    font-weight:300;
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+    
+    .card_container{
+        width: 1440px;
+        height: 2000px;
+        margin:auto;
+        background-color: red;
+    } 
+
+
+.logo{
+    width: 45px;
+        cursor: pointer;
+        padding: 20px 0px;
+        margin-top: 30px;
+    }
+
+.nav_links ul li {
+        list-style: none;
+       
+    }
+
+    
+
+.nav_links li {
+       display: inline-block;
+       padding: 0px 30px;
+       margin: 0px 50px;
+     }
+
+.nav_links li a {
+         text-decoration: none;
+         transition: all 0.3s ease 0s;
+         font-size: 18px;
+         
+     }
+
+.nav_links li a {
+     color: white;;
+    }
+
+button{
+        padding: 9px 25px;
+        background-color: #87e135;
+        border:none;
+        border-radius:50px;
+        cursor:pointer;
+        transition: all 0.3s ease 0s;
+    }
+
+    .nav_links li a:hover {
+        color: #87e135;
+       }
+
+button:hover{
+        background-color: rgba(0,136,169,0.8)
+    }
+
+
+    .showcase{
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 20px;
+        color: white;
+    }
+
+    .video-container{
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:100vh;
+        overflow: hidden;
+        background: var(--primary-color) url("Brooke Road clip_Moment.jpg") no-repeat center center/cover;
+    }
+
+    .video-container video{
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .video-container::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.6);
+    }
+
+    .content{
+        z-index: 10;
+    }
+
+    .btn{
+        display: inline-block;
+        padding: 10px 30px;
+        background-color: var(--primary-color);
+        color: white;
+        border: 1px #fff solid;
+        border-radius: 5px;
+        margin-top: 25px;
+        opacity:0.7;
+    }
