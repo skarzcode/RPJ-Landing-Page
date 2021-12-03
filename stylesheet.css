@@ -2,37 +2,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
-:root{
+:root {
     --primary-color: #3a4052;
 
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-   
+
 }
 
-body{
+body {
     font-family: "Open Sans", sans-serif;
     line-height: 1.5;
     margin: auto;
 }
 
-li, a, button {
+li,
+a,
+button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #edf0f1;
-    
+
 }
 
-.logo{
-    background-color:transparent;
+.logo {
+    background-color: transparent;
     margin-right: 100px;
 }
 
-header{
+
+.company-details{
+    width: 100%;
+    height: 100px;
+    background-color:#06112A;
+}
+
+
+
+
+header {
     width: 100%;
     position: absolute;
     clear: both;
@@ -44,253 +56,362 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 5%;
-    background-color: #41343C;
+    background-color: #b3ceb78f;  ;
     opacity: 0.8;
-    
+
 }
 
 
 
 
-h1{
-    font-weight:300;
+h1 {
+    font-weight: 300;
     font-size: 60px;
     line-height: 1.2;
     margin-bottom: 15px;
 }
-    
-    .card_container{
-        width: 1440px;
-        height: 2000px;
-        margin:auto;
-        background-color: red;
-    } 
+
+.card_container {
+    width: 1440px;
+    height: 2000px;
+    margin: auto;
+    background-color: red;
+}
 
 
-.logo{
+.logo {
     width: 45px;
-        cursor: pointer;
-        padding: 20px 0px;
-        margin-top: 30px;
-    }
+    cursor: pointer;
+    padding: 20px 0px;
+    margin-top: 30px;
+}
 
-    nav{
-        padding:0px;
-        margin: 0 auto;
-        position: absolute;
-        left: 10%;
-    }
+nav {
+    padding: 0px;
+    margin: -10px;
+    position: absolute;
+    left: 32%;
+}
 
 .nav_links ul li {
-        list-style: none;
-       
-    }
+    list-style: none;
 
-    
+}
+
+
 
 .nav_links li {
-      display: inline-block;
-      padding:  0px 55px;
-       margin: 0px auto;
-     }
+    display: inline-block;
+    padding: 0px 55px;
+    margin: 0px auto;
+}
 
 .nav_links li a {
-         text-decoration: none;
-         transition: all 0.3s ease 0s;
-         font-size: 18px;
-         
-     }
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+
+}
 
 .nav_links li a {
-     color: white;;
-    }
+    color: white;
+    ;
+}
 
-button{
-        padding: 9px 25px;
-        background-color: #87e135;
-        border:none;
-        border-radius:50px;
-        cursor:pointer;
-        transition: all 0.3s ease 0s;
-    }
+button {
 
-    .nav_links li a:hover {
-        color: #87e135;
-       }
+    padding: 9px 25px;
+    background-color: #7cf10d;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+}
 
-button:hover{
-        background-color: rgba(0,136,169,0.8)
-    }
+.nav_links li a:hover {
+    color: #87e135;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8)
+}
 
 
-    .showcase{
-        position: relative;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 0 20px;
-        color: white;
-    }
+.showcase {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    color: white;
+}
 
-    .video-container{
-        position:absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height:100vh;
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--primary-color) url("Brooke Road clip_Moment.jpg") no-repeat center center/cover;
+}
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.content {
+    z-index: 10;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #87e135;
+    ;
+    color: white;
+    border: 1px #fff solid;
+    border-radius: 5px;
+    margin-top: 25px;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+
+
+
+   
+   span{
+       color:#87E135;
+       background-color: transparent;
+       
+   }
+
+.flex-container{
+    width:100%;
+    height: 400px;
+    background-color: ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color:#d1f3b2;;
+    
+}
+
+ .slider-frame{
+      overflow: hidden;
+      height: 400px;
+      width: 700px;
+      margin-top:35px;
+     
+ }
+
+
+ @-webkit-keyframes slide_animation{
+     0% {left:0px;}
+     10% {left:0px;}
+     20% {left:700px;}
+     30% {left:700px;}
+     40% {left: 1400px;}
+     50% {left:1400px;}
+     60% {left:700px;}
+     70% {left:700px;}
+     80% {left:0px;}
+     90% {left:0px;}
+     100% {left:0px;}
+
+ }
+
+
+ .slide-images{
+     width:2100px;
+     height: 400px;
+     margin: -45 0 0 -1400px;
+     position: relative;
+     -webkit-animation-name: slide_animation;
+     -webkit-animation-duration: 33s;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-direction: alternate;
+     -webkit-animation-play-state: running;
+     
+ }
+
+ .img-container{
+     height: 400px;
+     width: 700px;
+     position: relative;
+     float: left;
+     margin-top: 40px;
+    
+ }
+
+ .img-slideshow{
+     width: 100%;
+     object-fit: cover;
+     border:solid black
+    
+ }
+
+
+
+.content-container{
+    width: 30px;
+    flex-grow: 0.91;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.content2{
+    width: 70%;
+    height: 70%;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.empty-space{
+    width: 100%;
+    height: 30vh;
+    background-color: white;
+}
+   
+
+
+@media only screen and (max-width: 420px) {
+    .card_container {
+        width: 375px;
+        height: 2000px;
+        margin: 0 auto;
+        background-color: red;
         overflow: hidden;
-        background: var(--primary-color) url("Brooke Road clip_Moment.jpg") no-repeat center center/cover;
     }
 
-    .video-container video{
-        min-width: 100%;
-        min-height: 100%;
-        object-fit: cover;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+}
+
+
+@media only screen and (max-width: 700px) {
+    .nav_links li {
+        display: block;
+        padding: 0px;
+        margin: 20px 10px;
+        width: 50%;
     }
 
-    .video-container::after{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
+    nav {
         width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.6);
+        height: 180px;
+        text-align: left;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        background-color: #06112A;
+        opacity: 0.8;
+        padding: 0px 0%;
+        margin: 0 auto;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;
+
     }
 
-    .content{
-        z-index: 10;
+
+    nav a {
+        opacity: 0;
+        transition: opacity 250ms ease-in-out 2500ms;
     }
 
-    .btn{
-        display: inline-block;
-        padding: 10px 30px;
-        background-color:  #87e135;;
-        color: white;
-        border: 1px #fff solid;
-        border-radius: 5px;
-        margin-top: 25px;
-        opacity:0.7;
-        text-decoration: none;
-    }
 
-    .nav-toggle{
+    .nav-toggle {
         display: none;
     }
 
-    @media only screen and (max-width: 420px) {
-        .card_container{
-            width: 375px;
-            height: 2000px;
-            margin:auto;
-            background-color: red;
-            overflow: hidden;
-        }
-        
-         }
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background-color: white;
+        height: 2px;
+        width: 2em;
+        border-radius: 2px;
+        position: relative;
+    }
+
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: "";
+        position: absolute;
+    }
+
+    .nav-toggle-label span::before {
+        bottom: 7px;
+    }
+
+    .nav-toggle-label span::after {
+        top: 7px;
+    }
 
 
-         @media only screen and (max-width: 700px) {
-            .nav_links li {
-                display: block;
-               padding:  0px 25px;
-                margin: 20px auto;
-                width: 100%;
-              }
+    header {
+        opacity: 1;
+    }
 
-              nav{
-                  width: 100%;
-                  height: 180px;
-                  text-align: left;
-                  position: absolute;
-                  top: 100%;
-                  left: 0%;
-                  background-color:#06112A;
-                  opacity: 0.8;
-                 padding:0px 0%;
-                 margin: 0 auto;
-                 transform: scale(1,0);
-                 transform-origin: top;
-                 transition: transform 400ms ease-in-out;
-            
-              }
+    .nav-toggle:checked~nav {
+        transform: scale(1, 1);
+    }
 
-              
-              nav a{
-                opacity: 0;
-                transition: opacity 250ms ease-in-out 2500ms;
-            }
-           
-
-              .nav-toggle{
-                  display: none;
-              }
-
-              .nav-toggle-label span,
-              .nav-toggle-label span::before,
-              .nav-toggle-label span::after{
-                  display: block;
-                  background-color: white;
-                  height: 2px;
-                  width: 2em;
-                  border-radius: 2px;
-                  position: relative;
-              }
-
-              .nav-toggle-label span::before,
-              .nav-toggle-label span::after{
-                  content: "";
-                  position: absolute;
-              }
-
-              .nav-toggle-label span::before{
-                  bottom: 7px;
-              }
-
-              .nav-toggle-label span::after{
-                top: 7px;
-            }
-              
-
-              header{
-                  opacity: 1;
-              }
-
-              .nav-toggle:checked ~ nav {
-                transform: scale(1,1);
-              }
-
-              .nav-toggle:checked ~ nav a{
-                opacity: 1;
-            }
-             }
-
-            
-                
-                 }
-   
-             @media only screen and (max-width: 760px) {
-                .nav_links li {
-                    width: 10%;
-                }
-                
-                 }
-        
-    
+    .nav-toggle:checked~nav a {
+        opacity: 1;
+    }
+}
 
 
-         @media only screen and (max-width: 900px) {
-        .cta{
-            display: none;
-        }
-         }
 
 
-        
+
+@media only screen and (max-width: 760px) {
+    .nav_links li {
+        width: 10%;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .cta {
+        display: none;
+    }
+}
