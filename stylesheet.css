@@ -35,11 +35,6 @@ button {
 }
 
 
-.company-details{
-    width: 100%;
-    height: 100px;
-    background-color:#06112A;
-}
 
 
 
@@ -187,6 +182,14 @@ button:hover {
 
 .content {
     z-index: 11;
+    position: absolute;
+    text-align: left;
+    top: 38%;
+    left: 60px;
+}
+
+.content h1{
+    width: 78%;
 }
 
 .btn {
@@ -211,9 +214,14 @@ button:hover {
 
    
    span{
-       color:#87E135;
+       color:#6CC911;
        background-color: transparent;
-       
+       display: block;
+   }
+
+   .span2{
+       color: white;
+       display: inline;
    }
 
 .flex-container{
@@ -221,6 +229,7 @@ button:hover {
     height: 400px;
     background-color: ;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     background-color:#d1f3b2;
@@ -295,6 +304,10 @@ button:hover {
     
 }
 
+.content-container2{
+    display: none;
+}
+
 .content2{
     width: 70%;
     height: 70%;
@@ -310,17 +323,39 @@ button:hover {
 
 
 
-.empty-space2{
+.banner{
     width: 100%;
-    height: 17vh;
-    background-color:white;
+    background-color:#040F2E;
+    display: flex;
+  
+}
+
+.banner2{
+    width: 33%;
+    height: 50px;
+    margin: 40px 70px;
+    background-color:;
+    color: white;
+    display: flex;
+   
 }
 
 .empty-space3{
     width: 100%;
     height: 17vh;
-    background-color:06112A;
+    background-color:white;
 }
+
+
+.svg-icon{
+    margin-right: 25px;
+    min-width: 50px;
+}
+
+.bannerTxt{
+    font-size: 12px;
+}
+
 
 
 
@@ -335,7 +370,7 @@ button:hover {
    
 
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 450px) {
     .card_container {
         width: 375px;
         height: 2000px;
@@ -352,6 +387,7 @@ button:hover {
 
 
 
+
 @media only screen and (max-width: 700px) {
     .nav_links li {
         display: block;
@@ -359,6 +395,8 @@ button:hover {
         margin: 20px 10px;
         width: 50%;
     }
+
+   
 
     nav {
         width: 100%;
@@ -428,30 +466,7 @@ button:hover {
 }
 
 
-.container_Gallery{
 
-}
-
-.Gallery_images{
-
-}
-
-.modal{
-
-}
-
-.modalContent{
-
-}
-
-
-.modalImg{
-
-}
-
-.modalTxt{
-
-}
 
 
 
@@ -468,5 +483,34 @@ button:hover {
 @media only screen and (max-width: 1000px) {
     .cta {
         display: none;
+    }
+
+   .content-container2{
+       display: block;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 20px 0px;
+     
+   }
+
+   .content-container2 h1{
+       font-size: 50px;
+   }
+
+    
+    .content-container{
+        display: none;
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+
+    .banner2{
+        width: 100%;
+        height: 50px;
+        margin: 20px 20px;
     }
 }

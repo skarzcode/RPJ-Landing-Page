@@ -7,9 +7,8 @@ const boxImg = document.querySelectorAll(".box-img");
 var galleryImg = ["galleryImg1.jpeg", "galleryImg2.jpeg", "galleryImg3.jpeg"];
 
 
-  var backGroundVid = document.getElementById('background-vid')
 
-    backGroundVid.play();
+
 
 console.log(modalTxt.innerHTML, "willy wanker");
 
