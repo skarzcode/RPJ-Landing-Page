@@ -148,6 +148,8 @@ button:hover {
     text-align: center;
     padding: 0 20px;
     color: white;
+   
+    
 }
 
 .video-container {
@@ -158,6 +160,7 @@ button:hover {
     height: 100vh;
     overflow: hidden;
     background: var(--primary-color) url("Brooke Road clip_Moment.jpg") no-repeat center center/cover;
+    
 }
 
 .video-container video {
@@ -168,6 +171,7 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
 
 .video-container::after {
@@ -178,23 +182,24 @@ button:hover {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+    
 }
 
 .content {
-    z-index: 10;
+    z-index: 11;
 }
 
 .btn {
     display: inline-block;
     padding: 10px 30px;
     background-color: #87e135;
-    ;
     color: white;
     border: 1px #fff solid;
     border-radius: 5px;
     margin-top: 25px;
     opacity: 1;
     text-decoration: none;
+    
 }
 
 .nav-toggle {
@@ -218,7 +223,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color:#d1f3b2;;
+    background-color:#d1f3b2;
     
 }
 
@@ -286,6 +291,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     background-color: white;
+    overflow: hidden;
     
 }
 
@@ -301,11 +307,31 @@ button:hover {
 }
 
 
-.empty-space{
+
+
+
+.empty-space2{
     width: 100%;
-    height: 30vh;
-    background-color: white;
+    height: 17vh;
+    background-color:white;
 }
+
+.empty-space3{
+    width: 100%;
+    height: 17vh;
+    background-color:06112A;
+}
+
+
+
+
+.outer_container{
+    
+}
+
+
+
+
    
 
 
@@ -402,6 +428,30 @@ button:hover {
 }
 
 
+.container_Gallery{
+
+}
+
+.Gallery_images{
+
+}
+
+.modal{
+
+}
+
+.modalContent{
+
+}
+
+
+.modalImg{
+
+}
+
+.modalTxt{
+
+}
 
 
 
