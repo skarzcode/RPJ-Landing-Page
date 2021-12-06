@@ -9,7 +9,6 @@ var galleryImg = ["galleryImg1.jpeg", "galleryImg2.jpeg", "galleryImg3.jpeg"];
 
 
 
-
 console.log(modalTxt.innerHTML, "willy wanker");
 
 console.log(galleryImg[0]);
@@ -45,7 +44,7 @@ boxImg.forEach((img) => {
 
 
 document.addEventListener("click", function(event){
-    if(event.target.id == "Gallery__images"){
+    if(event.target.id == "Gallery_images"){
         console.log("chiken dinner");
     };
 });
