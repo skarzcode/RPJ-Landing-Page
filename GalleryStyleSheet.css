@@ -303,8 +303,8 @@ transition: 0.3s all ease;
     .bannerTxt{
         font-size: 12px;
     }
-    
 
+   
     
     @media only screen and (max-width: 600px) {
         .Gallery_images{

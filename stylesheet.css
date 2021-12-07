@@ -372,6 +372,15 @@ button:hover {
    
 }
 
+.bannerTxt a{
+    text-decoration: none;
+
+}
+
+.bannerTxt a:hover{
+color:#6CC911 ;
+}
+
 .empty-space3{
     width: 100%;
     height: 15vh;
@@ -496,7 +505,7 @@ button:hover {
 
 
 .contact-in{
-    width: 90%;
+    width: 95%;
     height: auto;
     margin:auto;
     display: flex;
@@ -574,6 +583,30 @@ button:hover {
     padding: 10px 0px;
     cursor: pointer;
     font-size: 18px ;
+}
+
+.reveal{
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease;
+
+}
+
+.reveal.active{
+   
+    transform: translateY(0px);
+    opacity: 1; 
+}
+
+.reveal2{
+    opacity: 0;
+    transition: all 1s ease;
+    
+}
+
+.reveal2.active2{
+    opacity: 1;
+    
 }
 
 
