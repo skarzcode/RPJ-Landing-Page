@@ -41,6 +41,7 @@ header {
     padding: 30px 5%;
     background-color: #4a8d548f;  
     opacity: 1;
+    animation: nav-load 1.5s ease-in ;
     
 
 }
@@ -170,7 +171,7 @@ transition: 0.3s all ease;
       background-color: #06112A;
       color: white;
       z-index: 1;
-      overflow: a;
+      overflow: auto;
       opacity: 0;
       pointer-events: none;
       
@@ -292,7 +293,31 @@ transition: 0.3s all ease;
         background-color:;
         color: white;
         display: flex;
+        animation: content-load 900ms ease-in;
        
+    }
+
+
+    @keyframes content-load{
+        0%{
+            transform: translateY(-100%);
+        }
+   
+        100%{
+           transform: translateY(0%);
+        }
+    }
+
+    @keyframes nav-load {
+        0% {
+           
+           opacity: 0;
+        }
+   
+        100%{
+          
+           opacity: 0.8;
+        }
     }
 
     .svg-icon{
@@ -325,6 +350,7 @@ transition: 0.3s all ease;
             border: solid black;
             opacity: 1;
     }
+}
 
     @media only screen and (max-width: 700px) {
         .nav_links li {
@@ -333,6 +359,9 @@ transition: 0.3s all ease;
             margin: 20px 10px;
             width: 50%;
         }
+
+      
+    
     
        
     
@@ -415,6 +444,7 @@ transition: 0.3s all ease;
 
 
     @media only screen and (max-width: 1000px) {
+
     .banner{
         flex-direction: column;
     }
@@ -438,4 +468,60 @@ transition: 0.3s all ease;
         height: 50px;
         margin: 20px 20px;
     }
-}
+
+    .modal-flex{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+        background-color:;
+    }
+
+    .box{
+        width: 100%;
+        height: 10vh;
+        min-height: 10vh;
+        background-color ;
+        object-fit: contain;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 0px;
+        margin-top: 0px;
+      
+        
+    }
+
+    .box2{
+        width: 100%;
+        height:0px;
+        background-color:transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+       
+    }
+
+
+    .box-img{
+        width: 100%;
+        object-fit: contain;
+        border: solid black;
+        cursor: pointer;
+    }
+
+     .modalContent{
+        width: 60%;
+        min-height: 80vh;
+        margin-left: 0px;
+
+     }
+    }
+
+    

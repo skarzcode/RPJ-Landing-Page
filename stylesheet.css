@@ -53,6 +53,7 @@ header {
     padding: 30px 5%;
     background-color: #b3ceb78f;  ;
     opacity: 0.8;
+    animation: nav-load 1.5s ease-in ;
 
 }
 
@@ -186,10 +187,12 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+   
 }
 
 .content h1{
     width: 100%;
+    animation: nav-load 900ms ease-in ;
 }
 
 .btn {
@@ -254,6 +257,28 @@ button:hover {
       width: 700px;
       margin-top:35px;
      
+ }
+
+ @keyframes nav-load {
+     0% {
+        
+        opacity: 0;
+     }
+
+     100%{
+       
+        opacity: 0.8;
+     }
+ }
+
+ @keyframes content-load{
+     0%{
+         transform: translateY(-100%);
+     }
+
+     100%{
+        transform: translateY(0%);
+     }
  }
 
 
@@ -369,6 +394,7 @@ button:hover {
     background-color:;
     color: white;
     display: flex;
+    animation: content-load 900ms ease-in;
    
 }
 
