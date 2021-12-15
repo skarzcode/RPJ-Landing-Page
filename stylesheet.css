@@ -935,8 +935,8 @@ display: none;
     height:auto;
     background-color: #040F2E;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: column;
     margin-bottom: 5px;
    
@@ -979,7 +979,7 @@ align-items: flex-start;
    display: block;
    margin-left: 20px; 
    margin-right:0px;
-   background-color:blue;
+   background-color:yellow;
   
 }
 .footer-nav h2{
