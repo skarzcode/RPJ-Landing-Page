@@ -757,7 +757,7 @@ display: none;
     }
 
     .video-container{
-        background-image: url('jose-llamas-SJPrbVaHo-Q-unsplash.jpg');
+        background-image: url('jose-llamas-SJPrbVaHo-Q-unsplash-min.jpg');
     }
 
 }
@@ -983,7 +983,7 @@ align-items: flex-start;
   
 }
 .footer-nav h2{
-   margin:0px 0px;
+   margin:20px 0px;
 }
 
 .footer-nav ul{
@@ -992,7 +992,7 @@ align-items: flex-start;
 
 
 .footer-nav li{
-    margin-top:5px;
+    margin-top:20px;
 }
 
 
