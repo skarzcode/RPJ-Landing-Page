@@ -484,7 +484,7 @@ span {
 
 .Footer{
     width: 100%;
-    height:275px;
+    height:285px;
     background-color: #040F2E;
     display: flex;
     align-items: center;
@@ -580,6 +580,7 @@ margin-top: 25px;
 
 .footer-banner{
     width: 33.33%;
+    margin-left: 100px;
 }
 
 
