@@ -976,11 +976,16 @@ align-items: flex-start;
 .footer-nav{
     width: 80%;
    display: block;
-   margin-left: 20px;
+   margin-left: 20px; 
+   margin-right:0px;
   
 }
 .footer-nav h2{
    margin:10px 0px;
+}
+
+.footer-nav ul{
+    margin-top: 0px;
 }
 
 }
