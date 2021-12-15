@@ -471,7 +471,7 @@ span {
     width: 90%;
     border: none;
     outline: none;
-    border-radius: 2px;
+    border-radius: 1px;
     background-color: #6AC50C;
     color: #fff;
     text-transform: uppercase;
@@ -749,7 +749,7 @@ h1 {
     }
     
     .maps{
-        background: blue;
+        background:;
     }
 
     .video-container video{
@@ -995,5 +995,8 @@ align-items: flex-start;
     margin-top:20px;
 }
 
+.contact-form-btn {
+    border-radius: 1px;
+}
 
 }
