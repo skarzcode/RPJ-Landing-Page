@@ -4,7 +4,7 @@ const modalImg = document.getElementsByClassName("modalImg")[0];
 const modalTxt = document.getElementsByClassName("modalTxt")[0];
 const close = document.getElementById("close");
 const boxImg = document.querySelectorAll(".box-img");
-var galleryImg = ["galleryImg1.jpeg", "galleryImg2.jpeg", "galleryImg3.jpeg"];
+var galleryImg = ["galleryImg1.jpeg", "galleryImg2.jpeg", "galleryImg3.jpeg","galleryImg1.jpeg", "galleryImg2.jpeg", "galleryImg3.jpeg","galleryImg1.jpeg", "galleryImg2.jpeg","galleryImg2.jpeg", "galleryImg3.jpeg","galleryImg1.jpeg", "galleryImg2.jpeg"];
 var Content = document.getElementsByClassName("container__content")[0];
 
 window.addEventListener("scroll", reveal);
