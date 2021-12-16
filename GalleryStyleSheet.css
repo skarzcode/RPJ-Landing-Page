@@ -180,20 +180,19 @@ margin: 10px 0em;
     }
 
     .modal-flex{
-        width: 100%;
-        height: 100vh;
+        width: 95%;
+        height: 746px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
-        margin: 20px 0px;
+        margin: 0px auto;
+        
     }
 
     .box{
         width: 20%;
-        height: 447.6px;
-        min-height:447.6px;
-        margin-right: 100px;
-        margin-bottom: 125px;
+        height: 70%;
+       margin: 80px auto;
         background-color: black;
         object-fit: cover;
       
@@ -201,13 +200,12 @@ margin: 10px 0em;
 
     .box2{
         width: 100%;
-        height: 33%;
         background-color:transparent;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1em;
         align-items: center;
-        margin: 5px;
+        margin:0px;
        
     }
 
@@ -220,7 +218,7 @@ margin: 10px 0em;
     }
 
     .modalContent{
-        width: 60%;
+        width: 80%;
         height: auto;
         min-height: auto;
         display: flex;
@@ -228,6 +226,11 @@ margin: 10px 0em;
         align-self: center;
         flex-direction: column;
         margin-left: 100px;  
+    }
+
+    .modalflex2{
+        display: flex;
+        
     }
 
     .modalImg{
@@ -469,82 +472,78 @@ margin: 10px 0em;
         margin: 20px 20px;
     }
 
-    .modal-flex{
+    .modal{
+        position: fixed;
+        height:100%;
         width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 20px 0px;
-        background-color:;
-    }
-
-    .box{
-        width: 100%;
-        height: 10vh;
-        min-height: 10vh;
-        background-color ;
-        object-fit: contain;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-right: 0px;
-        margin-top: 0px;
-      
+        top:0;
+        left: 0;
+        background-color: #06112A;
+        color: white;
+        z-index: 1;
+        overflow: auto;
+        opacity: 0;
+        pointer-events: none;
         
-    }
-
-    .box2{
-        width: 100%;
-        height:0px;
-        background-color:transparent;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0px;
-       
-    }
-
-
-    .box-img{
-        width: 100%;
-        object-fit: contain;
-        border: solid black;
-        cursor: pointer;
-    }
-
-     .modalContent{
-        width: 60%;
-        min-height:auto;
-        height: auto;
-        margin-left: 0px;
-     }
-
-
-     .modaltxt{
-         margin: 35px 0px;
-     }
-
-
-     .box2{
-        width: 100%;
-        height: 100%;
-        background-color:transparent;
-        display: grid;
-        grid-template-columns: repeat(5, 2fr);
-        grid-gap: 1em;
-    }
-    .box{
-        width: 100%;
-       height: auto;
-       min-height: auto;
-       margin-right: 0px;
-       margin-bottom: 0px;
+      }
+  
+      .modal-flex{
+          width: 95%;
+          height: 746px;
+          display: block;
+          margin: 0px auto;
+          
+      }
+  
+      .box{
+          width: 100%;
+          height: auto;
+         margin: 0px auto;
+          background-color: blue;
+          object-fit: cover;
         
-}
+      }
+  
+      .box2{
+          width: 100%;
+          background-color:transparent;
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-gap: 0.5em;
+          align-items: center;
+          margin:0px;
+         
+      }
+
+      .modalflex2{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+      }
+  
+  
+      .box-img{
+          width: 100%;
+          object-fit: contain;
+          border: solid black;
+          cursor: pointer;
+      }
+  
+      .modalContent{
+          width: 80%;
+          height: auto;
+          min-height: auto;
+          display: flex;
+          justify-content: center;
+          align-self: center;
+          flex-direction: column;
+          margin-left: 0px;  
+      }
+  
     }
 
     
