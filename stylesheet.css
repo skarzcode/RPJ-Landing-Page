@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+html {
+    scroll-behavior: smooth;
+  }
 
 :root {
     --primary-color: #3a4052;
@@ -42,25 +45,31 @@ button {
 /*Section website-banner */
 .banner {
     width: 100%;
-    background-color: #040F2E;
+    background-color: black;
     display: flex;
 
 }
 
 .banner2 {
     width: 33%;
-    height: 50px;
-    margin: 40px 70px;
+    height: 10px;
+    margin: 20px 70px 45px 70px;
     background-color: ;
     color: white;
     display: flex;
     animation: content-load 900ms ease-in;
+    font-size: 8px;
 
 }
 
 .bannerTxt a {
     text-decoration: none;
+    font-size: 10px;
 
+}
+
+.bannerTxt p, span {
+font-size: 10px;
 }
 
 .bannerTxt a:hover {
@@ -87,15 +96,16 @@ header {
     top: 0%;
     left: 0%;
     z-index: 1;
-    height: 80px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 5%;
-    background-color: #b3ceb78f;
-    opacity: 0.8;
+    background-color: white;
     animation: nav-load 1.5s ease-in;
+    
 }
+
 
 
 .showcase {
@@ -108,6 +118,10 @@ header {
     text-align: center;
     padding: 0 20px;
     color: white;
+    background-color: black;
+    animation: nav-load 1.5s ease-in;
+   
+    
 }
 
 .logo {
@@ -141,16 +155,19 @@ nav {
 }
 
 .nav_links li a {
-    color: white;
+    color: black;
 }
 
 .nav_links li a:hover {
     color: #87e135;
 }
 
+
+    
+
 button {
     padding: 9px 25px;
-    background-color: #7cf10d;
+    background-color: black;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -165,12 +182,42 @@ button:hover {
 .video-container {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 5%;
+    width: 95%;
     height: 100vh;
     overflow: hidden;
     background: var(--primary-color) url("Brooke Road clip_Moment.jpg") no-repeat center center/cover;
 
+}
+
+.aside{
+    position: absolute;
+    top:70;
+    left: 0;
+    width: 5%;
+    background-color:white;
+    height: 95%;
+    color: gray;
+    animation: nav-load 1.5s ease-in;
+    overflow: hidden;
+   
+   
+}
+
+.aside p {
+    position: absolute;
+    top: 40%;
+    left: -10; 
+    font-size: 18px;
+    font-weight: bolder;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg); 
+}
+
+.scroll{
+    white-space: nowrap;
+    color: gray;
 }
 
 .video-container video {
@@ -207,6 +254,9 @@ button:hover {
     animation: nav-load 900ms ease-in;
 }
 
+.content a {
+    background-color: black;
+}
 .nav-toggle {
     display: none;
 }
@@ -251,6 +301,7 @@ span {
     background-color: black;
     color: white;
     border: solid #D1F3B2;
+    cursor: pointer;
 }
 
 .card-txt {
@@ -315,6 +366,7 @@ span {
     height: 400px;
     width: 700px;
     margin-top: 35px;
+    background-color:;
 }
 
 .slide-images {
@@ -785,7 +837,18 @@ display: none;
         width: 80%;
     }
 
+    .aside{
+        display: none;
+    }
+
+    .video-container{
+        width: 100%;
+        left: 0%;
+    }
    
+    .content h1{
+        font-size: 40px;
+    }
 
     nav {
         width: 100%;
@@ -794,7 +857,7 @@ display: none;
         position: absolute;
         top: 100%;
         left: 0%;
-        background-color: #06112A;
+        background-color: white;
         opacity: 0.8;
         padding: 0px 0%;
         margin: 0 auto;
@@ -819,7 +882,7 @@ display: none;
     .nav-toggle-label span::before,
     .nav-toggle-label span::after {
         display: block;
-        background-color: white;
+        background-color: black;
         height: 2px;
         width: 2em;
         border-radius: 2px;
@@ -833,7 +896,7 @@ display: none;
     }
 
     .nav-toggle-label span::before {
-        bottom: 7px;
+        bottom: 8px;
     }
 
     .nav-toggle-label span::after {
